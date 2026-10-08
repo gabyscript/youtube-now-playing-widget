@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Now Playing: opciones</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Conexión con OBS</h1>
+      <p class="hint">
+        Datos de <em>Herramientas → Configuración del servidor WebSocket</em> en OBS.
+      </p>
+      <form id="settings-form">
+        <label for="obs-port">Puerto</label>
+        <input id="obs-port" type="number" min="1" max="65535" required />
+
+        <label for="obs-password">Contraseña</label>
+        <input id="obs-password" type="password" autocomplete="off" />
+
+        <button type="submit">Guardar y conectar</button>
+      </form>
+      <p id="connection-status" class="status">Verificando…</p>
+    </main>
+    <script type="module" src="./options.ts"></script>
+  </body>
+</html>

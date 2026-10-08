@@ -1,0 +1,57 @@
+[data-theme='apple'] {
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --title-font: var(--font);
+  --title-weight: 600;
+  --card-radius: 20px;
+  --card-glow: 0 0 0 transparent;
+  --title-glow: none;
+  --accent-glow: none;
+}
+[data-theme='apple'][data-mode='light'] {
+  --card-bg: linear-gradient(135deg, rgba(255, 255, 255, .88), rgba(242, 242, 247, .78));
+  --card-fg: #1d1d1f;
+  --card-muted: #6e6e73;
+  --card-border: 1px solid rgba(255, 255, 255, .7);
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+  --track: rgba(0, 0, 0, .12);
+  --accent: #007aff;
+}
+[data-theme='apple'][data-mode='dark'] {
+  --card-bg: linear-gradient(135deg, rgba(44, 44, 46, .82), rgba(28, 28, 30, .74));
+  --card-fg: #f5f5f7;
+  --card-muted: #a1a1a6;
+  --card-border: 1px solid rgba(255, 255, 255, .12);
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, .45);
+  --track: rgba(255, 255, 255, .18);
+  --accent: #0a84ff;
+}
+
+[data-theme='gamer'] {
+  --font: 'Rajdhani', 'Segoe UI', sans-serif;
+  --title-font: 'Orbitron', var(--font);
+  --title-weight: 700;
+  --card-radius: 6px;
+  --card-shadow: 0 0 0 transparent;
+}
+[data-theme='gamer'][data-mode='dark'] {
+  --card-bg: rgba(10, 10, 20, .9);
+  --card-fg: #e8f9ff;
+  --card-muted: #7fd8ff;
+  --card-border: 1px solid #00f0ff;
+  --card-glow: 0 0 18px rgba(0, 240, 255, .45);
+  --title-glow: 0 0 8px rgba(0, 240, 255, .6);
+  --accent: #00f0ff;
+  --accent-glow: 0 0 8px #00f0ff;
+  --track: rgba(0, 240, 255, .15);
+}
+[data-theme='gamer'][data-mode='light'] {
+  --card-bg: rgba(245, 247, 255, .94);
+  --card-fg: #14062b;
+  --card-muted: #6b2fd6;
+  --card-border: 1px solid #ff2e88;
+  --card-glow: 0 0 16px rgba(255, 46, 136, .35);
+  --title-glow: none;
+  --accent: #ff2e88;
+  --accent-glow: 0 0 6px #ff2e88;
+  --track: rgba(255, 46, 136, .15);
+}

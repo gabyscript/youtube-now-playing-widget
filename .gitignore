@@ -1,0 +1,10 @@
+# Dependencias y builds
+node_modules/
+dist/
+.netlify/
+*.local
+.DS_Store
+
+# Documentación de trabajo: se ignoran todos los .md excepto los README
+*.md
+!README.md

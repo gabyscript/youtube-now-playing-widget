@@ -1,0 +1,26 @@
+{
+  "name": "youtube-now-playing-widget",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:overlay": "npm run dev -w apps/overlay",
+    "dev:extension": "npm run dev -w apps/extension",
+    "build:overlay": "npm run build -w apps/overlay",
+    "build:extension": "npm run build -w apps/extension",
+    "build": "npm run build:overlay && npm run build:extension",
+    "typecheck": "npm run typecheck --workspaces --if-present && npm run typecheck:scripts",
+    "fake-event": "tsx scripts/fake-event.ts",
+    "typecheck:scripts": "tsc -p scripts/tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@ynp/shared": "*",
+    "obs-websocket-js": "^5.0.8",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
